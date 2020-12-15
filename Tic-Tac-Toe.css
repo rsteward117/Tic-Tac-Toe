@@ -1,0 +1,85 @@
+body{
+    background-color: skyblue;
+    align-content: center;
+}
+
+h1{
+    text-align: center;
+    border-bottom: 1px solid darkblue;
+}
+
+#PlayerSelectionContainer{
+    width: 55%;
+    height: 150px;
+    text-align: center;
+    margin-left: 22%
+}
+
+.Player1{
+    width: 40%;
+    float: left;
+}
+
+.Player2{
+float: right;
+width: 40%;
+}
+
+button{
+border-radius: 15px;
+border: none;
+color: white;
+background-color: gray;
+font-size: large;
+transition: all .40s ease-in;
+}
+
+button:hover {
+background-color: black;
+cursor: pointer;
+transform: scale(1.2);
+border-color: black;
+box-shadow: 0 0 1rem black;
+}
+
+.activeButton{
+    background-color: black;
+    transform: scale(1.2);
+}
+
+#GameBoard{
+    width: 600px;
+    height: 350px;
+    border: 1px solid darkblue;
+    margin-left: 27%; 
+    text-align: center;
+    font-size: 500%;
+    font-family: cursive, sans-serif;
+    display: grid;
+    
+}
+
+
+.newdivgrid{
+    border: 1px solid black;
+    grid-row-gap: 50px;
+    
+}
+
+.newdivgrid:hover{
+    background-color: aqua;
+}
+
+#resultContainer{
+    text-align: center;
+    width: 55%;
+    margin-left: 22%;
+}
+
+.player1Results{
+    float: left;
+}
+
+.Player2Results{
+    float: right
+}
