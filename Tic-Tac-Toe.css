@@ -1,0 +1,99 @@
+body{
+    background-color: skyblue;
+    align-content: center;
+}
+
+h1{
+    text-align: center;
+    border-bottom: 1px solid darkblue;
+}
+
+#PlayerSelectionContainer{
+    width: 55%;
+    height: 150px;
+    text-align: center;
+    margin-left: 24%
+}
+
+.Player1{
+    width: 40%;
+    float: left;
+}
+
+.Player2{
+float: right;
+width: 40%;
+}
+
+button{
+border-radius: 15px;
+border: none;
+color: white;
+background-color: gray;
+font-size: large;
+transition: all .40s ease-in;
+}
+
+button:hover {
+background-color: black;
+cursor: pointer;
+transform: scale(1.2);
+border-color: black;
+box-shadow: 0 0 1rem black;
+}
+
+.activeButton{
+    background-color: black;
+    transform: scale(1.2);
+}
+#playerTurn{
+    margin-left: 48%;
+    font-family: monospace,sans-serif;
+}
+#GameBoard{
+    width: 600px;
+    height: 350px;
+    border: 1px solid darkblue;
+    margin-left: 30%; 
+    
+    
+}
+.gameSquares{
+    background-color: azure;
+    text-align: center;
+    font-size: 500%;
+    font-family: cursive, sans-serif;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.newSquares{
+    height: 108px;
+    width: 190.90px;
+    border: 1px solid black;
+    border-radius: 12%;
+    grid-row-gap: 50px;
+    background-color: aquamarine
+}
+
+.newSquares:hover{
+    background-color: aqua;
+}
+.X::after{
+    content: "X";
+}
+.O::after{
+    content: "O"
+}
+.disabledClicks{
+    pointer-events: none;
+}
+#resultContainer{
+    text-align: center;
+    width: 55%;
+    margin-left: 24%;
+}
+
+
